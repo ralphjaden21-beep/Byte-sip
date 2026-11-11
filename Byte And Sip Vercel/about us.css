@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; 
+    background: url("background coffee.webp") center/cover no-repeat fixed;
+    position: relative;
+}
+
+/*Navigation Section*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #8b5e3c;
+    padding: 15px 40px;
+}
+
+.logo {
+    color: #f5c16c;
+    display: flex;
+    gap: 10px;
+    font-weight: bold;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+}
+
+.nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: #f5c16c;
+}
+
+/*Overlay Section*/
+.about-overlay {
+    width: min(1100px, 92%);
+    margin: 80px auto;
+    padding: 40px;
+    background: rgba(255,255,255,0.55);
+    backdrop-filter: blur(18px);
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 0 25px 70px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.tagline {
+    color: #3b2a1a;
+    margin: 0;
+}
+
+.intro {
+    color: #555;
+}
+
+.hero-img img {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    max-height: 350px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card {
+    background: #fdf6ec;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.card h2 {
+    color: #6b3e1d;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card.small {
+    text-align: center;
+}
+
+/*Footer Section*/
+
+.footer {
+    background: #7a3b0c;
+    color: white;
+    padding: 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-col {
+    max-width: 300px;
+}
