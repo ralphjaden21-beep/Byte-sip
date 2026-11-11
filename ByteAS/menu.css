@@ -1,0 +1,356 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url("background coffee.webp") center/cover no-repeat fixed;
+    position: relative;
+}
+
+/*Navigation Section*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8b5e3c;
+    padding: 15px 40px;
+}
+
+.logo {
+    color: #f5c16c; 
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;    
+    gap: 10px;
+}   
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    margin-left: 25px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: #f5c16c;
+}
+
+.menu-section {
+    text-align: center;
+    padding: 80px 20px;
+    background: rgba(255,255,255,0.6);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    margin: 40px;
+}
+
+.menu-section h1 {
+    font-size: 40px;
+    color: #3b2a1a;
+}
+
+.menu-section p {
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+/*Coffee Section*/
+
+.category-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.category-title::before {
+    content: "|";
+    font-size: 24px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    padding: 20px 40px;
+}
+
+.cart-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+
+.card-image {
+    position: relative;
+}
+
+.card-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.price-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #b45309;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.card-info {
+    padding: 18px;
+    text-align: left;
+}
+
+.card-info h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #7c2d12;
+}
+
+.card-info p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 8px;
+    line-height: 1.5;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-weight: bold;
+    color: #8b5e3c; 
+    font-size: 16px;
+}
+
+.add-cart {
+    background: #8b5e3c;
+    color: white;
+    border: none;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.25s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.add-cart:hover {
+    background: #6b4a2f;
+    transform: scale(1.1);
+}
+
+.fa-plus {
+    font-size: 16px;
+}
+
+/*milktea Section*/
+
+.milktea-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #6b21a8;
+}
+
+.milktea-title::before {
+    content: "|";
+    font-size: 24px;
+}
+
+.milktea .card {
+    background: #fff;
+    border: 1px solid #eee;
+}
+
+.milktea .card-info h3 {
+    color: #6b21a8;
+}
+
+.milktea .card-info p {
+    color: #666;
+}
+
+.milktea .price-badge {
+    background: #9333ea;
+}
+
+.milktea .card:hover {
+    box-shadow: 0 15px 30px rgba(147, 51, 234, 0.2);
+}
+
+.milktea .add-cart {
+    background: #9333ea;
+    box-shadow: 0 4px 12px rgba(147, 51, 234, 0.3); 
+}
+
+.milktea .add-cart:hover {
+    background: #7e22ce;
+}
+
+/*Pastries Section*/
+
+.pastries-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #a04000;
+}
+
+.pastries-title::before {
+    content: "|";
+    font-size: 24px;
+}
+
+.pastries .card {
+    background: #fff;
+    border: 1px solid #eee;
+}
+
+.pastries .card-info h3 {
+    color: #a04000;
+}
+
+.pastries .card-info p {
+    color: #666;
+}
+
+.pastries .price-badge {
+    background: #a04000;
+}
+
+.pastries .card:hover {
+    box-shadow: 0 15px 30px rgba(160, 64, 0, 1);
+}
+
+.pastries .add-cart {
+    background: #a04000;
+    box-shadow: 0 4px 12px rgba(160, 64, 0, 1); 
+}
+
+.pastries .add-cart:hover {
+    background: #a04000;
+}
+
+/*Pasta Section*/
+
+.pasta-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #E60000;
+}
+
+.pasta-title::before {
+    content: "|";
+    font-size: 24px;
+}
+
+.pasta .card {
+    background: #fff;
+    border: 1px solid #eee;
+}
+
+.pasta .card-info h3 {
+    color: #E60000;
+}
+
+.pasta .card-info p {
+    color: #666;
+}
+
+.pasta .price-badge {
+    background: #E60000;
+}
+
+.pasta .card:hover {
+    box-shadow: 0 15px 30px rgba(230, 0, 0, 1);
+}
+
+.pasta .add-cart {
+    background: #E60000;
+    box-shadow: 0 4px 12px rgba(230, 0, 0, 1); 
+}
+
+.pasta .add-cart:hover {
+    background: #E60000;
+}
+
+/*Footer Section*/
+
+.footer {
+    background-color: #7a3b0c; 
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.footer-col {
+    max-width: 300px;
+    margin: 10px;
+}
+
+.footer h3 {
+    color: #ffcc70;
+}
+
+.footer h4 {
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 14px;
+    line-height: 1.6;
+}
