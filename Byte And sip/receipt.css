@@ -1,0 +1,240 @@
+.receipt-page {
+    min-height: 100vh;
+    margin: 0;
+    padding: 32px 18px;
+    color: #202822;
+    font-family: "DM Sans", "Segoe UI", sans-serif;
+}
+
+.receipt-shell {
+    width: min(100%, 650px);
+    margin: 0 auto;
+}
+
+.receipt-brand {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    width: fit-content;
+    margin: 0 auto 20px;
+    color: #f1eee6;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.receipt-brand img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    background: #fffefa;
+}
+
+.receipt-brand small {
+    display: block;
+    margin-top: 3px;
+    color: #adb3ad;
+    font-size: 8px;
+    letter-spacing: 1.2px;
+}
+
+.receipt-card {
+    padding: clamp(22px, 5vw, 40px);
+    background: #fffefa;
+    border: 1px solid #e3e6dc;
+    box-shadow: 0 24px 70px rgba(0, 0, 0, .28);
+}
+
+.receipt-heading {
+    text-align: center;
+}
+
+.receipt-icon {
+    display: grid;
+    width: 42px;
+    height: 42px;
+    margin: 0 auto 13px;
+    place-items: center;
+    color: #244c3d;
+    background: #edf1e6;
+    border-radius: 50%;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.receipt-eyebrow {
+    margin: 0 0 8px;
+    color: #a9613d;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.receipt-heading h1 {
+    margin: 0;
+    color: #202822;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: clamp(25px, 5vw, 34px);
+    font-weight: 600;
+}
+
+.receipt-heading > p:last-child {
+    margin: 8px 0 0;
+    color: #788178;
+    font-size: 12px;
+}
+
+.receipt-meta {
+    display: grid;
+    gap: 12px;
+    margin-top: 25px;
+    padding: 17px;
+    background: #f6f6f0;
+    border: 1px solid #e3e6dc;
+}
+
+.receipt-meta > div {
+    display: grid;
+    grid-template-columns: minmax(105px, 1fr) 2fr;
+    gap: 14px;
+    color: #788178;
+    font-size: 11px;
+}
+
+.receipt-meta strong {
+    color: #202822;
+    text-align: right;
+    overflow-wrap: anywhere;
+}
+
+.receipt-items-wrap {
+    margin-top: 23px;
+    overflow-x: auto;
+}
+
+.receipt-items {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+}
+
+.receipt-items th,
+.receipt-items td {
+    padding: 11px 8px;
+    border-bottom: 1px solid #e3e6dc;
+    text-align: left;
+}
+
+.receipt-items th {
+    color: #788178;
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: .7px;
+}
+
+.receipt-items th:last-child,
+.receipt-items td:last-child {
+    text-align: right;
+}
+
+.receipt-total {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 15px;
+    color: #202822;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.receipt-total strong {
+    color: #244c3d;
+    font-size: 17px;
+}
+
+.receipt-error {
+    margin: 20px 0 0;
+    padding: 12px;
+    color: #9d362b;
+    background: #fbefec;
+    border: 1px solid #efd5ce;
+    font-size: 12px;
+}
+
+.receipt-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.receipt-actions a,
+.receipt-actions button {
+    display: inline-flex;
+    min-height: 42px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+    border: 1px solid #cbd2c8;
+    border-radius: 3px;
+    font: 600 11px "DM Sans", "Segoe UI", sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.receipt-back {
+    color: #526055;
+    background: transparent;
+}
+
+.receipt-print {
+    color: #fffefa;
+    background: #244c3d;
+    border-color: #244c3d !important;
+}
+
+@media print {
+    body.receipt-page {
+        padding: 0;
+        background: #fff;
+    }
+
+    .receipt-brand,
+    .receipt-actions,
+    .receipt-heading > p:last-child {
+        display: none;
+    }
+
+    .receipt-shell {
+        width: 100%;
+    }
+
+    .receipt-card {
+        padding: 0;
+        border: 0;
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 480px) {
+    body.receipt-page {
+        padding: 18px 12px;
+    }
+
+    .receipt-card {
+        padding: 22px 17px;
+    }
+
+    .receipt-meta > div {
+        grid-template-columns: 1fr;
+        gap: 4px;
+    }
+
+    .receipt-meta strong {
+        text-align: left;
+    }
+
+    .receipt-actions {
+        flex-direction: column-reverse;
+    }
+}

@@ -1,0 +1,113 @@
+<?php
+$pageTitle = 'About Us | Byte N Sip';
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title><?= htmlspecialchars($pageTitle, ENT_QUOTES, 'UTF-8') ?></title>
+<link rel="stylesheet" href="about us.css">
+<link rel="stylesheet" href="site-theme.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a class="logo" href="index.php" aria-label="Byte N Sip home">
+            <img src="byte-n-sip-logo.png" alt="Byte &amp; Sip coffee shop logo">
+            <span>Byte <span class="logo-accent">N</span> Sip</span>
+        </a>
+
+        <nav class="nav">
+            <a href="index.php">Home</a>
+            <a href="menu.php">Menu</a>
+            <a href="gallery.php">Gallery</a>
+            <a class="active" href="about us.php" aria-current="page">About Us</a>
+            <a href="contact us.php">Contact Us</a>
+            <a href="Log in.php">Log in</a>
+        </nav>
+    </header>
+
+    <section class="about-overlay">
+
+        <h1>About us</h1>
+
+        <h2 class="tagline">Where coffee meets curiosity</h2>
+
+        <p class="intro">
+            A welcoming coffee spot for students, educators, IT professionals, and anyone who loves a really good cup.
+        </p>
+
+        <div class="hero-img">
+            <img src="byte-n-sip-dev-cafe.svg" alt="An illustrated cafe desk with a laptop displaying code and a cup of coffee">
+        </div>
+  
+        <div class="card">
+            <h2>Our Story</h2>
+            <p>
+                Byte N Sip brings two everyday essentials together: great coffee and a place to think. Inspired by the people who learn, teach, build, and create, our cafe is a friendly stop for anyone looking for a little comfort between big ideas.
+            </p>
+
+            <p>
+                From freshly brewed coffee and milk tea to pastries and pasta, our menu is made for the moments that make your day better. Come in for a quick pick-me-up or stay a little longer to catch up, recharge, and enjoy the atmosphere.
+            </p>
+
+            <p>
+                Whether you're a student working through an assignment, a professor between classes, an IT professional taking a breather, or simply a coffee lover, Byte N Sip welcomes you. No login required to love coffee.
+            </p>
+        </div>
+
+        <div class="features">
+
+            <div class="card small">
+                <h3>☕ Premium Coffee</h3>
+                <p>Expertly crafted beverages using the finest beans.</p>
+            </div>
+
+            <div class="card small">
+                <h3>💻 Made for makers</h3>
+                <p>A welcoming stop for study sessions, work breaks, and fresh ideas.</p>
+            </div>
+
+            <div class="card small">
+                <h3>🥐 Fresh Pastries</h3>
+                <p>Fresh baked croissants, muffins, and desserts daily.</p>
+            </div>
+
+        </div>
+
+        <div class="card">
+            <h2>Our Values</h2>
+            <p>✔ Community First — everyone is welcome at our table</p>
+            <p>✔ Quality & Care — drinks and bites made with care</p>
+            <p>✔ A little inspiration — a cozy place to pause and recharge</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-col">
+                <h3>☕ Byte N Sip</h3>
+                <p>Good coffee for curious minds. Pull up a chair and stay a while.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Opening Hours</h4>
+                <p>Mon - Fri: 7AM - 9PM</p>
+                <p>Sat - Sun: 8AM - 10PM</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>📍 2383 Beata St. Pandacan Manila</p>
+                <p>📞 (555) 123-4567</p>
+                <p>✉ Marg19@gmail.com</p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>

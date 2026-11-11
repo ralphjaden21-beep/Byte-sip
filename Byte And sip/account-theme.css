@@ -1,0 +1,40 @@
+body {
+    background-color: #0d1517;
+    background-image:
+        radial-gradient(ellipse at 7% 9%, rgba(197, 167, 108, 0.13), transparent 32%),
+        radial-gradient(ellipse at 92% 35%, rgba(57, 91, 85, 0.16), transparent 36%);
+    background-attachment: fixed;
+}
+
+body:has(.app-shell) .page-heading h1 {
+    color: #f1eee6;
+    font-family: "Playfair Display", Georgia, serif;
+}
+
+body:has(.app-shell) .page-heading .description {
+    color: #adb3ad;
+}
+
+body:has(.app-shell) .page-heading .eyebrow {
+    color: #d0a775;
+}
+
+.settings-panel textarea,
+.field textarea {
+    width: 100%;
+    padding: 10px 12px;
+    color: #202822;
+    background: #fff;
+    border: 1px solid #dfe4da;
+    border-radius: 3px;
+    font: inherit;
+    line-height: 1.5;
+    resize: vertical;
+}
+
+.settings-panel textarea:focus,
+.field textarea:focus {
+    border-color: #64816d;
+    outline: 0;
+    box-shadow: 0 0 0 3px rgba(36, 76, 61, .12);
+}
